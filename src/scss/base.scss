@@ -1,0 +1,44 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*, html, body {
+    font-family: NotoSans, NanumGothic, OpenSans,-apple-system, sans-serif;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overscroll-behavior-y: contain;
+}
+
+body {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    #content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 1200px;
+        min-height: 100%;
+        position: relative;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
