@@ -36,7 +36,7 @@ $(document).ready(function(){
         // console.log("address2 ==>" + address2);
         $.ajax({
             dataType: "json",
-            url: "/data/data.json",
+            url: "/wn-official/data/data.json",
             data: params,
             mimeType: "application/json",
             success: function(result){
@@ -55,7 +55,7 @@ $(document).ready(function(){
     });
     $.ajax({
         dataType: "json",
-        url: "/data/data.json",
+        url: "/wn-official/data/data.json",
         // data: params,
         mimeType: "application/json",
         success: function(result){
