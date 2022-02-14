@@ -55,6 +55,16 @@ footer .footer_wrap .footer_info_wrap .footer_company_info_wrap p {
   line-height: 1.5;
 }
 
+footer .footer_wrap .footer_info_wrap .footer_user_info_wrap {
+  margin: 20px auto;
+}
+
+footer .footer_wrap .footer_info_wrap .footer_user_info_wrap p {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 footer .footer_wrap .footer_info_wrap .f_copy {
   font-size: 14px;
 }
