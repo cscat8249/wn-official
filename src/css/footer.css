@@ -46,7 +46,7 @@ footer .footer_wrap .footer_info_wrap .footer_dep1_ul li a.bold {
 }
 
 footer .footer_wrap .footer_info_wrap .footer_company_info_wrap {
-  margin: 20px auto;
+  margin-top: 3%;
 }
 
 footer .footer_wrap .footer_info_wrap .footer_company_info_wrap p {
@@ -56,7 +56,7 @@ footer .footer_wrap .footer_info_wrap .footer_company_info_wrap p {
 }
 
 footer .footer_wrap .footer_info_wrap .footer_user_info_wrap {
-  margin: 20px auto;
+  margin-top: 1%;
 }
 
 footer .footer_wrap .footer_info_wrap .footer_user_info_wrap p {
