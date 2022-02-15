@@ -713,12 +713,51 @@
 }
 
 .foundedcost_section {
+  margin-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foundedcost_section .cooperation_wrap {
+  padding-top: 6%;
+}
+
+.foundedcost_section .cooperation_wrap img {
+  display: block;
   width: 100%;
-  height: 100vh;
+}
+
+.foundedcost_section .cost_wrap {
+  padding-top: 6%;
+}
+
+.foundedcost_section .cost_wrap img {
+  display: block;
+  width: 100%;
+}
+
+.foundedcost_section .cost_info_wrap {
+  padding-top: 6%;
+}
+
+.foundedcost_section .cost_info_wrap img {
+  display: block;
+  width: 100%;
 }
 
 .affiliateinquiry_section {
-  padding-top: 6%;
+  margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,6 +775,7 @@
 }
 
 .affiliateinquiry_section .affiliateinquiry_wrap {
+  padding-top: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
