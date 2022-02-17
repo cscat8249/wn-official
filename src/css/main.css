@@ -168,29 +168,45 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  overflow: hidden;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items .item {
-  margin: 10px;
-  width: 300px;
-  height: 400px;
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items {
+  width: 98%;
+  height: 360px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 19.5px;
   background: #fff;
 }
 
 .menu_section .menu_wrap .menu_items_wrap .menu_item_btn {
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +218,7 @@
           align-items: center;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_item_btn .right {
+.menu_section .menu_wrap .menu_items_wrap .menu_item_btn .menu-swiper-right {
   width: 40px;
   height: 40px;
   border: 1px solid #ccc;
@@ -220,7 +236,7 @@
   cursor: pointer;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_item_btn .left {
+.menu_section .menu_wrap .menu_items_wrap .menu_item_btn .menu-swiper-left {
   width: 40px;
   height: 40px;
   border: 1px solid #ccc;
