@@ -193,13 +193,13 @@
 }
 
 .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 98%;
   height: 360px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

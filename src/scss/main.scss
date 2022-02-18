@@ -117,10 +117,10 @@
                 position: relative;
                 display: flex;
                 .menu_items{
+                    display: flex;
                     width: 98%;
                     height: 360px;
                     transition: 0.5s;
-                    display: flex;
                     align-items: center;
                     .item {
                         position: relative;
