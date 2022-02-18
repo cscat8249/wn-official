@@ -116,22 +116,24 @@
             .menu_items_box_wrap {
                 position: relative;
                 display: flex;
-                .menu_items_all {
+                .menu_items_all, .menu_items_meat, .menu_items_chicken,
+                .menu_items_koreafood, .menu_items_globalfood, .menu_items_snackbar, .menu_items_dessert{
                     width: 98%;
                     height: 360px;
                     transition: 0.5s;
                     display: flex;
                     align-items: center;
-                    margin-left: 20px;
-                    
                     .item {
                         position: relative;
                         display: flex;
                         flex-direction: column;
                         border-radius: 19.5px;
                         background: #fff;
-                        
                     }
+                }
+                .menu_items_meat, .menu_items_chicken,
+                .menu_items_koreafood, .menu_items_globalfood, .menu_items_snackbar, .menu_items_dessert {
+                    display: none;
                 }
             }
             .menu_item_btn {
