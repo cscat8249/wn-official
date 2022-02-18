@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    new Swiper('.menu_items', {
+    new Swiper('.menu_items_all', {
         slidesPerView: 4,
         spaceBetween: 20,
         loop : true,
