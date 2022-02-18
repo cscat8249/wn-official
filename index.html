@@ -31,7 +31,7 @@
     
     
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cc2d88735aad52c775a100fa60d3cbbe"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- 건너뛰기 링크 시작 -->
@@ -457,9 +457,9 @@
                                     </div>
                                     <div class="tel_wrap">
                                         <p>연락처</p>
-                                        <input type="text" id="telnumber1" value="" name="telnumber1">
-                                        <input type="text" id="telnumber2" value="" name="telnumber2">
-                                        <input type="text" id="telnumber3" value="" name="telnumber3">
+                                        <input type="text" id="telnumber1" maxlength='3' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="" name="telnumber1">
+                                        <input type="text" id="telnumber2" maxlength='4' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="" name="telnumber2">
+                                        <input type="text" id="telnumber3" maxlength='4' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="" name="telnumber3">
                                     </div>
                                     <div class="hopearea_wrap">
                                         <p class="title">희망개설지역</p>
@@ -473,7 +473,7 @@
                                 <div class="affiliateinquiry_text_two">
                                     <div class="question_wrap">
                                         <p class="title">기타문의내용</p>
-                                        <textarea name="etc" id="etc" cols="30" rows="10" placeholder="기타 문의내용을 자유롭게 적어주세요."></textarea>
+                                        <textarea name="etc" id="etc" cols="30" rows="10" onkeyup="chkword(this, 200)" placeholder="기타 문의내용을 자유롭게 적어주세요."></textarea>
                                     </div>
                                     <div class="checkbox_btn_wrap">
                                         <div class="chekbox_wrap">
@@ -482,12 +482,8 @@
                                                 개인정보수집관련 동의
                                                 <span class="checkmark"></span>
                                             </label>
-                                            <!-- <input type="checkbox" name="agreement" id="agreement" />
-                                            <label for="agreement">
-                                                
-                                            </label>     -->
                                         </div>
-                                        <button type="submit">문의하기</button>
+                                        <button id="form_submit" type="button">문의하기</button>
                                     </div>
                                 </div>
                                 
