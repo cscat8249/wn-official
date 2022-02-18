@@ -1,5 +1,6 @@
+
+// 글자수 체크
 function chkword(obj, maxByte) {
- 
     var strValue = obj.value;
     var strLen = strValue.length;
     var totalByte = 0;
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let etc = document.querySelector('#etc');
     let agreement = document.querySelector('#agreement');
     let form_submit = document.querySelector('#form_submit');
-
     
     form_submit.addEventListener('click',function(e){
         e.preventDefault();
@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs.send('service_tfbhvt1', 'template_1ypktmh', templateParams)
          //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
         .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
             alert("성공적으로 가맹문의를 신청 하였습니다.");
             fullname.value = null;
             telnumber1.value = null;
@@ -92,10 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
             estimate.value = null;
             etc.value = null;
         }, function(error) {
-            console.log('FAILED...', error);
             alert("가맹문의 신청이 안되었습니다. 한번더 다시 부탁드립니다.");
         });
-
-        
     });
 });
