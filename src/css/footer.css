@@ -86,7 +86,8 @@ footer .footer_wrap .footer_logo_wrap {
 }
 
 footer .footer_wrap .footer_logo_wrap img {
-  width: 50%;
+  width: 100%;
+  display: block;
 }
 
 #privacypolicy, #termsofuse {

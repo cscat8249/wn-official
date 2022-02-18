@@ -27,7 +27,8 @@
     <script type="text/javascript" src="/wn-official/src/js/footer.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/instafeed.min.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/map.js"></script>
-
+    <script type="text/javascript" src="/wn-official/src/js/affiliateinquiry.js"></script>
+    
     
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cc2d88735aad52c775a100fa60d3cbbe"></script>
 
@@ -447,26 +448,26 @@
                             <h1 class="title">고객센터</h1>
                             <p class="desc">프리미엄 유통 전문점 우리집놀러와, 성공적인 창업을 위한 첫 걸음</p>
                         </div>
-                        <form action="">
+                        <form action="" id="affiliateinquiry_form">
                             <div class="affiliateinquiry_text_wrap">
                                 <div class="affiliateinquiry_text_one">
                                     <div class="name_wrap">
                                         <p class="title">이름</p>
-                                        <input type="text" name="name" placeholder="이름을 입력하세요" value="">
+                                        <input type="text" name="name" id="fullname" placeholder="이름을 입력하세요" value="">
                                     </div>
                                     <div class="tel_wrap">
                                         <p>연락처</p>
-                                        <input type="text" value="" name="telnumber1">
-                                        <input type="text" value="" name="telnumber2">
-                                        <input type="text" value="" name="telnumber3">
+                                        <input type="text" id="telnumber1" value="" name="telnumber1">
+                                        <input type="text" id="telnumber2" value="" name="telnumber2">
+                                        <input type="text" id="telnumber3" value="" name="telnumber3">
                                     </div>
                                     <div class="hopearea_wrap">
                                         <p class="title">희망개설지역</p>
-                                        <input type="text" placeholder="가게 오픈 희망 지역은 어디세요?">
+                                        <input type="text" id="hopearea" placeholder="가게 오픈 희망 지역은 어디세요?">
                                     </div>
                                     <div class="estimate_wrap">
                                         <p class="title">창업 예상 견적</p>
-                                        <input type="text" placeholder="창업 예산을 알려주시면 좋아요.(부동산임대비 포함)">
+                                        <input type="text" id="estimate" placeholder="창업 예산을 알려주시면 좋아요.(부동산임대비 포함)">
                                     </div>
                                 </div>
                                 <div class="affiliateinquiry_text_two">
@@ -477,7 +478,7 @@
                                     <div class="checkbox_btn_wrap">
                                         <div class="chekbox_wrap">
                                             <label class="container">
-                                                <input type="checkbox" value="ok" name="agreement" id="agreement" checked="checked">
+                                                <input type="checkbox" value="ok" name="agreement" id="agreement">
                                                 개인정보수집관련 동의
                                                 <span class="checkmark"></span>
                                             </label>
@@ -520,7 +521,7 @@
                         <p class="f_copy">Copyright © 2021 All Rights Reserved.</p>
                     </div>
                     <div class="footer_logo_wrap">
-                        <img src="/wn-official/src/img/logo/footer_fix_01.png" alt="우리집 놀러와 로고">
+                        <img src="/wn-official/src/img/logo/footer_fix_02.png" alt="우리집 놀러와 로고">
                     </div>
                 </div>
             </div>
