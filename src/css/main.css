@@ -192,8 +192,7 @@
   display: flex;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_all, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_meat, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_chicken,
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_koreafood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_globalfood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_snackbar, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_dessert {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items {
   width: 98%;
   height: 360px;
   -webkit-transition: 0.5s;
@@ -206,8 +205,7 @@
           align-items: center;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_all .item, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_meat .item, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_chicken .item,
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_koreafood .item, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_globalfood .item, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_snackbar .item, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_dessert .item {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items .item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +218,7 @@
   background: #fff;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_meat, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_chicken,
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_koreafood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_globalfood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_snackbar, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_dessert {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .meat, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .chicken, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .koreafood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .globalfood, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .snackbar, .menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .dessert {
   display: none;
 }
 

@@ -116,8 +116,7 @@
             .menu_items_box_wrap {
                 position: relative;
                 display: flex;
-                .menu_items_all, .menu_items_meat, .menu_items_chicken,
-                .menu_items_koreafood, .menu_items_globalfood, .menu_items_snackbar, .menu_items_dessert{
+                .menu_items{
                     width: 98%;
                     height: 360px;
                     transition: 0.5s;
@@ -131,8 +130,7 @@
                         background: #fff;
                     }
                 }
-                .menu_items_meat, .menu_items_chicken,
-                .menu_items_koreafood, .menu_items_globalfood, .menu_items_snackbar, .menu_items_dessert {
+                .meat, .chicken, .koreafood, .globalfood, .snackbar, .dessert {
                     display: none;
                 }
             }

@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    let dep1_items = document.querySelectorAll('.dep1_item');
+    
+    dep1_items.forEach(dep1_item => {
+        dep1_item.addEventListener('click', function(){
+            alert('1');
+        });
+    });
+    
+    
     new Swiper('.menu_items_all', {
         slidesPerView: 4,
         spaceBetween: 20,
