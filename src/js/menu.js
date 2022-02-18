@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let viewIdx = this.getAttribute('subSeq');
             menu_items.forEach((thsIdx,index) => {
                 if(index == viewIdx){
-                    thsIdx.style.display = "block";
+                    thsIdx.style.display = "flex";
                 } else {
                     thsIdx.style.display = "none";
                 }
