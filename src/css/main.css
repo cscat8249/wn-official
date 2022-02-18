@@ -178,7 +178,7 @@
   display: flex;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_all {
   width: 98%;
   height: 360px;
   -webkit-transition: 0.5s;
@@ -192,7 +192,7 @@
   margin-left: 20px;
 }
 
-.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items .item {
+.menu_section .menu_wrap .menu_items_wrap .menu_items_box_wrap .menu_items_all .item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
