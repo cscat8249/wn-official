@@ -30,17 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    new Swiper('.all', {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop : true,
-        navigation: {
-            nextEl: '.menu-swiper-left',
-            prevEl: '.menu-swiper-right',
-        },
-        mousewheel: {
-            invert: true,
-        },
+    all.addEventListener('click', function(){
+        new Swiper('.all', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop : true,
+            navigation: {
+                nextEl: '.menu-swiper-left',
+                prevEl: '.menu-swiper-right',
+            },
+            mousewheel: {
+                invert: true,
+            },
+        });
     });
 
     meat.addEventListener('click', function(){
