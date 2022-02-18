@@ -1,14 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dep1_items = document.querySelectorAll('.dep1_item');
-    
+    let menu_items = document.querySelectorAll('.menu_items');
+
     dep1_items.forEach(dep1_item => {
         dep1_item.addEventListener('click', function(){
-            alert('1');
+            let viewIdx = this.getAttribute('subSeq');
+            menu_items.forEach((thsIdx,index) => {
+                if(index == viewIdx){
+                    thsIdx.style.display = "block";
+                } else {
+                    thsIdx.style.display = "none";
+                }
+            });
+            clicks.forEach((thsIdx) => {
+                if(thsIdx.getAttribute('subSeq') == viewIdx){
+                    thsIdx.classList.add('active');
+                } else {
+                    thsIdx.classList.remove('active');
+                }
+            })
         });
     });
-    
-    
-    new Swiper('.menu_items_all', {
+
+    var swiper = new Swiper('.all', {
         slidesPerView: 4,
         spaceBetween: 20,
         loop : true,
@@ -19,16 +33,83 @@ document.addEventListener("DOMContentLoaded", function () {
         mousewheel: {
             invert: true,
         },
-        breakpoints: { // 화면의 넓이가 320px 이상일 때 
-            320: { 
-                slidesPerView: 2, 
-                spaceBetween: 10 
-            }, 
-            // 화면의 넓이가 640px 이상일 때 
-            640: { 
-                slidesPerView: 4, 
-                spaceBetween: 10 
-            } 
-        }
+    });
+
+    var swiper = new Swiper('.meat', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
+
+    var swiper = new Swiper('.chicken', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
+
+    var swiper = new Swiper('.koreafood', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
+
+    var swiper = new Swiper('.globalfood', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
+
+    var swiper = new Swiper('.snackbar', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
+
+    var swiper = new Swiper('.dessert', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop : true,
+        navigation: {
+            nextEl: '.menu-swiper-left',
+            prevEl: '.menu-swiper-right',
+        },
+        mousewheel: {
+            invert: true,
+        },
     });
 });
