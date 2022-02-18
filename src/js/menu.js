@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     thsIdx.style.display = "none";
                 }
             });
-            clicks.forEach((thsIdx) => {
+            dep1_items.forEach((thsIdx) => {
                 if(thsIdx.getAttribute('subSeq') == viewIdx){
                     thsIdx.classList.add('active');
                 } else {
