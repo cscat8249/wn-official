@@ -46,18 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         if(fullname.value.length === 0) {
             alert('이름을 입력하세요.');
+            fullname.focus();
             return false;
         }
         if(telnumber1.value.length === 0 || telnumber2.value.length === 0 || telnumber3.value.length === 0){
             alert('휴대폰 번호를 입력하세요.');
+            telnumber1.focus();
             return false;
         }
         if(hopearea.value.length === 0) {
             alert('희망개설지역을 입력하세요.');
+            hopearea.focus();
             return false;
         }
         if(estimate.value.length === 0) {
             alert('창업예상견적을 입력하세요.');
+            estimate.focus();
             return false;
         }
         if(!agreement.checked) {
