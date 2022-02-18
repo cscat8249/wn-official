@@ -158,6 +158,20 @@
   background-color: #fdbd3a;
 }
 
+.menu_section .menu_wrap .menu_dep_wrap .dep1_ul .item.active a {
+  font-weight: 700;
+}
+
+.menu_section .menu_wrap .menu_dep_wrap .dep1_ul .item.active a span {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  display: block;
+  width: 100%;
+  background: #fdbd3a;
+}
+
 .menu_section .menu_wrap .menu_items_wrap {
   margin-top: 5%;
   display: -webkit-box;
