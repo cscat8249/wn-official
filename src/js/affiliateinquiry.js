@@ -80,9 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert("성공적으로 가맹문의를 신청 하였습니다.");
+            fullname.value = null;
+            telnumber1.value = null;
+            telnumber2.value = null;
+            telnumber3.value = null;
+            hopearea.value = null;
+            estimate.value = null;
+            etc.value = null;
         }, function(error) {
             console.log('FAILED...', error);
             alert("가맹문의 신청이 안되었습니다. 한번더 다시 부탁드립니다.");
         });
+
+        
     });
 });
