@@ -827,7 +827,7 @@
 }
 
 .foundedcost_section .cooperation_wrap {
-  padding-top: 6%;
+  padding-top: 4%;
 }
 
 .foundedcost_section .cooperation_wrap img {
@@ -1065,7 +1065,7 @@
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .affiliateinquiry_section .affiliateinquiry_wrap .affiliateinquiry_text_wrap .affiliateinquiry_text_two .checkbox_btn_wrap .container:hover input ~ .checkmark {
