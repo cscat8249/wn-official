@@ -202,6 +202,7 @@
   height: 300px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #content .interior_section .market_img_wrap .item img {
@@ -274,6 +275,7 @@
   height: 300px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #content .smartdevice_section .smart_img_wrap .item img {
