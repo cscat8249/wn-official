@@ -1,4 +1,3 @@
-
 // 글자수 체크
 function chkword(obj, maxByte) {
     var strValue = obj.value;
@@ -77,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
             estimate : estimate.value,
             desc : etc.value,
         };
-
         emailjs.init("user_xeNiLGf0KtGdgplHVTXMr");
         emailjs.send('service_tfbhvt1', 'template_1ypktmh', templateParams)
          //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
@@ -90,8 +88,46 @@ document.addEventListener("DOMContentLoaded", function () {
             hopearea.value = null;
             estimate.value = null;
             etc.value = null;
+            closeLoadingWithMask();
         }, function(error) {
             alert("가맹문의 신청이 안되었습니다. 한번더 다시 부탁드립니다.");
+            closeLoadingWithMask();
         });
     });
+    
+    function LoadingWithMask() {
+        //화면의 높이와 너비를 구합니다.
+        var maskHeight = $(document).height();
+        var maskWidth  = window.document.body.clientWidth;
+         
+        //화면에 출력할 마스크를 설정해줍니다.
+        var mask       ="<div id='mask' style='position:absolute; z-index:9000; background-color:#000000; display:none; left:0; top:0;'></div>";
+        var loadingImg ='';
+          
+        loadingImg +="<img src='/wn-official/src/img/bg/Spinner.gif' style='position: absolute; top: 50%; left: 45%; display: block; margin: 0px auto;'/>";
+         
+        //화면에 레이어 추가
+        $('body')
+            .append(mask);
+     
+        //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채웁니다.
+        $('#mask').css({
+                'width' : maskWidth,
+                'height': maskHeight,
+                'opacity' :'0.3'
+        });
+      
+        //마스크 표시
+        $('#mask').show();
+      
+        //로딩중 이미지 표시
+        $('#loadingImg').append(loadingImg);
+        $('#loadingImg').show();
+
+    }
+    
+    function closeLoadingWithMask() {
+        $('#mask, #loadingImg').hide();
+        $('#mask, #loadingImg').empty(); 
+    }
 });

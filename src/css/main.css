@@ -450,6 +450,11 @@
 }
 
 .storeinfo_section .text_wrap .title_wrap .title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.storeinfo_section .text_wrap .title_wrap .desc {
   font-size: 20px;
 }
 
@@ -669,6 +674,7 @@
 }
 
 .affiliateinquiry_section {
+  position: relative;
   margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
