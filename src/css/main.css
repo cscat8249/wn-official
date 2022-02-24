@@ -409,91 +409,28 @@
 }
 
 .storeinfo_section {
-  padding-top: 6%;
+  padding-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 90vh;
-  background-color: #ffb902;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  color: #fff;
-  background-image: url("/wn-official/src/img/bg/ceo.png");
-  background-size: 50% 60%;
-  background-position: 98% 100%;
-  background-repeat: no-repeat;
-}
-
-.storeinfo_section .text_wrap {
-  margin-top: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.storeinfo_section .text_wrap .title_wrap {
+  height: auto;
   margin-bottom: 4%;
 }
 
-.storeinfo_section .text_wrap .title_wrap .title {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.storeinfo_section .text_wrap .title_wrap .desc {
-  font-size: 20px;
-}
-
-.storeinfo_section .text_wrap .big_text_wrap {
-  margin-bottom: 4%;
-}
-
-.storeinfo_section .text_wrap .big_text_wrap .big_text {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.storeinfo_section .text_wrap .button_wrap {
-  margin-bottom: 1%;
-}
-
-.storeinfo_section .text_wrap .button_wrap .button {
-  color: #222;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 200px;
-  height: 46px;
-  font-size: 20px;
-  font-weight: 700;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  line-height: 3;
-  background-color: #fff;
-}
-
-.storeinfo_section .text_wrap .point_wrap .text {
-  font-size: 14px;
+.storeinfo_section img {
+  display: block;
+  width: 100%;
 }
 
 .stroy_section {
