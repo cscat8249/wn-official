@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let all = document.querySelector('#all');
     let meat = document.querySelector('#meat');
     let koreafood = document.querySelector('#koreafood');
+    let snackbar = document.querySelector('#snackbar');
     let globalfood = document.querySelector('#globalfood');
     let special = document.querySelector('#special');
-    let snackbar = document.querySelector('#snackbar');
     let dessert = document.querySelector('#dessert');
 
     dep1_items.forEach(dep1_item => {
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    globalfood.addEventListener('click', function(){
-        new Swiper('.globalfood', {
+    snackbar.addEventListener('click', function(){
+        new Swiper('.snackbar', {
             slidesPerView: 4,
             spaceBetween: 20,
             loop : true,
@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    snackbar.addEventListener('click', function(){
-        new Swiper('.snackbar', {
+    globalfood.addEventListener('click', function(){
+        new Swiper('.globalfood', {
             slidesPerView: 4,
             spaceBetween: 20,
             loop : true,
