@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let all = document.querySelector('#all');
     let meat = document.querySelector('#meat');
-    let chicken = document.querySelector('#chicken');
     let koreafood = document.querySelector('#koreafood');
     let globalfood = document.querySelector('#globalfood');
+    let special = document.querySelector('#special');
     let snackbar = document.querySelector('#snackbar');
     let dessert = document.querySelector('#dessert');
 
@@ -73,21 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    chicken.addEventListener('click', function(){
-        new Swiper('.chicken', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
-
     koreafood.addEventListener('click', function(){
         new Swiper('.koreafood', {
             slidesPerView: 4,
@@ -120,6 +105,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     snackbar.addEventListener('click', function(){
         new Swiper('.snackbar', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop : true,
+            navigation: {
+                nextEl: '.menu-swiper-left',
+                prevEl: '.menu-swiper-right',
+            },
+            mousewheel: {
+                invert: true,
+            },
+        });
+    });
+
+    special.addEventListener('click', function(){
+        new Swiper('.special', {
             slidesPerView: 4,
             spaceBetween: 20,
             loop : true,
