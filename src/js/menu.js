@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
         mousewheel: {
             invert: true,
         },
+        autoplay: {
+            delay: 3000,
+        },
     });
 
     all.addEventListener('click', function(){
