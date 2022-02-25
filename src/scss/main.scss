@@ -557,5 +557,22 @@
                 }
             }
         }
+        .startup_inquiry_wrap {
+            margin-top: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 700;
+            p {
+                font-family: 'NEXON Lv1 Gothic OTF';
+                
+            }
+            i {
+                font-size: 30px;
+                line-height: inherit;
+                color: #fdb53d
+            }
+        }
     }
 }

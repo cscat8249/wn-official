@@ -870,3 +870,28 @@
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
+
+.affiliateinquiry_section .affiliateinquiry_wrap .startup_inquiry_wrap {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.affiliateinquiry_section .affiliateinquiry_wrap .startup_inquiry_wrap p {
+  font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+.affiliateinquiry_section .affiliateinquiry_wrap .startup_inquiry_wrap i {
+  font-size: 30px;
+  line-height: inherit;
+  color: #fdb53d;
+}
