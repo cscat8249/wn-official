@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     $('img[usemap]').rwdImageMaps();
-    
+
     new Swiper('.market_img_items', {
         slidesPerView: 1,
         spaceBetween: 50,
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         loop: true,
         autoplay: {
-            delay: 4000,
+            delay: 3000,
         },
     });
 });
