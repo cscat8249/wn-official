@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var viewer = new Viewer(document.querySelector('.market_img_wrap'), {
-        navbar : false,
-        toolbar : false
-    });
-    var viewer = new Viewer(document.querySelector('.smart_img_wrap'), {
-        navbar : false,
-        toolbar : false
+    $('img[usemap]').rwdImageMaps();
+    
+    new Swiper('.market_img_items', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        loop : true,
+        mousewheel: {
+            invert: true,
+        },
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
     });
 });

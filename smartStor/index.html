@@ -18,12 +18,11 @@
     <link rel="stylesheet" href="/wn-official/src/css/header.css">
     <link rel="stylesheet" href="/wn-official/src/css/footer.css">
     <link rel="stylesheet" href="/wn-official/src/css/smartstor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.7/viewer.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.7/viewer.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/smartstor.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/footer.js"></script>
 
@@ -98,84 +97,57 @@
         <div id="content">
             <section id="smartstor_section" class="smartstor_section">
                 <div class="smartstor_info_wrap">
-                    <div class="inner">
-                        <div class="smartstor_info_wrap_text_wrap">
-                            <p class="title">
-                                '우리집놀러와' 는<br/>
-                                어떤 곳일까요?
-                            </p>
-                            <p class="desc">
-                                밥상을 준하는 분들을 위해, 우리집놀러와는 지금도 전국 맛집을 찾고 연구하고 있습니다.<br/>
-                                오늘, 딱 맞는 나만의 특별한 요릴를 경험해보세요.
-                            </p>
-                        </div>
-                    </div>
+                    <img src="/wn-official/src/img/smartstor/smartstor_visual.png" alt="우리집놀러와 스마트스토어 비주얼">
                 </div>
             </section>
             <section id="stormap_section" class="stormap_section">
                 <div class="inner">
-                    <img src="/wn-official/src/img/content/map_img.jpg" alt="우리집 놀러와 이미지 맵 약도">  
+                    <div class="title_wrap">
+                        <h1 class="title">매장위치</h1>
+                        <p class="desc">우리집놀러와 함께 감성적인 분위기를 내보세요</p>
+                    </div>
+                    <img src="/wn-official/src/img/smartstor/smartstor_map.png" alt="우리집 놀러와 스마트스토어 맵 약도">  
                 </div>
             </section>
             <section id="experience_section" class="experience_section">
                 <div class="inner">
-                    <div class="experience_text_wrap">
-                        <p class="experience_one">
-                            오직, 밥상을 준비하는 분들에게 집중한 체험 공간<br/>
-                            "특별한 요리를 경험하세요"
-                        </p>
-                        <p class="experience_bold">
-                            뜯고 담고 굽고 즐기고
-                        </p>
-                        <p class="experience_one">전국에 맛집을 완벽히 재현해 놓고 나만의 쇼케이스</p>
-                        <a class="link" href="https://youtu.be/uUUycx-8uS0" target="_blank">우리집놀러와 유투브</a>
-                        <a class="link" href="https://map.naver.com/v5/entry/place/1731325794" target="_blank">네이버플레이스</a>
-                        <a class="link" href="http://pf.kakao.com/_qGLwK" target="_blank">우리집놀러와 카카오채널</a>
-                        <p class="experience_two">*예약 고객에게, 드시고 싶은 요리 1가지를 무료로 드립니다.</p>
-                    </div>
+                    <img src="/wn-official/src/img/smartstor/smartstor_info.png" alt="우리집 놀러와 스마트스토어 정보" usemap="#image-map">  
+                    <map name="image-map">
+                        <area target="_blank" alt="우리집놀러와 유투브" title="우리집놀러와 유투브" href="https://youtu.be/uUUycx-8uS0" coords="919,280,857,346" shape="rect">
+                        <area target="_blank" alt="우리집놀러와 카카오 채널" title="우리집놀러와 카카오 채널" href="https://map.naver.com/v5/entry/place/1731325794" coords="933,282,994,344" shape="rect">
+                        <area target="_blank" alt="우리집놀러와 네이버지도" title="우리집놀러와 네이버지도" href="http://pf.kakao.com/_qGLwK" coords="1007,280,1073,343" shape="rect">
+                    </map>
                 </div>
             </section>
             <section id="interior_section" class="interior_section">
                 <div class="interior_wrap">
                     <div class="inner">
                         <div class="title_wrap">
-                            <h1 class="title">우리집 놀러와 매장 인테리어</h1>
-                            <p class="desc1">
-                                심신을 안정을 주는 자연적인 컬러와<br/>
-                                나무의 리모델링 인 밀키트 음식이 보관된 매장
-                            </p>
-                            <p class="desc2">
-                                편안하게 매장 체험을 해보세요.
+                            <h1 class="title">매장 인테리어</h1>
+                            <p class="desc">
+                                고객들에게 편안함을, 점주분에겐 자신감을<br/>
+                                우리집놀러와만의 감성적인 인테리어
                             </p>
                         </div>
                         <div class="market_img_wrap">
-                            <div class="grid-sizer"></div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_01.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_02.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_03.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_04.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_05.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_06.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_07.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_08.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/market/market_09.jpg" alt="">
+                            <div class="market_img_items">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide item">
+                                        <img src="/wn-official/src/img/smartstor/smartstor_interior_01.png" alt="우리집 놀러와 스마스트 스토어 인테리어">
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <img src="/wn-official/src/img/smartstor/smartstor_interior_02.png" alt="우리집 놀러와 스마스트 스토어 인테리어">
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <img src="/wn-official/src/img/smartstor/smartstor_interior_03.png" alt="우리집 놀러와 스마스트 스토어 인테리어">
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <img src="/wn-official/src/img/smartstor/smartstor_interior_04.png" alt="우리집 놀러와 스마스트 스토어 인테리어">
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <img src="/wn-official/src/img/smartstor/smartstor_interior_05.png" alt="우리집 놀러와 스마스트 스토어 인테리어">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,34 +157,14 @@
                 <div class="smartdevice_wrap">
                     <div class="inner">
                         <div class="title_wrap">
-                            <h1 class="title">우리집 놀러와 매장 스마트기기</h1>
-                            <p class="desc1">
-                                우리집 놀러와는 최첨단 시스템으로
-                            </p>
-                            <p class="desc2">
-                                쉽고 간편하게 운영할 수 있습니다.
+                            <h1 class="title">스마트 기기 안내</h1>
+                            <p class="desc">
+                                우리집놀러와 매장의<br/>
+                                스마트한 기기들의 소개합니다
                             </p>
                         </div>
                         <div class="smart_img_wrap">
-                            <div class="grid-sizer"></div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_01.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_02.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_03.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_04.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_05.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="/wn-official/src/img/smartdevice/smartdevice_06.jpg" alt="">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -220,7 +172,7 @@
             <section id="drawing_section" class="drawing_section">
                 <div class="drawing_wrap">
                     <div class="inner">
-                        <img src="/wn-official/src/img/content/design_img.jpg" alt="우리집 놀러와 설계도">
+                        <img src="/wn-official/src/img/smartstor/design_img.png" alt="우리집 놀러와 설계도">
                     </div>
                 </div>
             </section>

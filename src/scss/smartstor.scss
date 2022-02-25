@@ -6,32 +6,19 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-image: url('/wn-official/src/img/bg/bg_left.png'), url('/wn-official/src/img/bg/bg_right.png'), url('/wn-official/src/img/bg/bg_center.png');
-    background-size: 35% 15%, 35% 15%, 80% 12%;
-    background-position: 100% 10% ,0px 45%, 50% 100%;
-    background-repeat:no-repeat;
-    overflow: auto;
+    // background-image: url('/wn-official/src/img/bg/bg_left.png'), url('/wn-official/src/img/bg/bg_right.png'), url('/wn-official/src/img/bg/bg_center.png');
+    // background-size: 35% 15%, 35% 15%, 80% 12%;
+    // background-position: 100% 10% ,0px 45%, 50% 100%;
+    // background-repeat:no-repeat;
+    // overflow: auto;
     .smartstor_section {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        overflow: auto;
-        .smartstor_info_wrap_text_wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        img {
+            display: block;
             width: 100%;
-            height: 80vh;
-            p {
-                margin-left: 10%;
-                &.title {
-                    font-size: 30px;
-                    font-weight: 700;
-                    margin-top: 1%;
-                    margin-bottom: 2%;
-                }
-            }
         }
     }
     
@@ -40,6 +27,24 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        margin-bottom: 2%;
+        .title_wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 5%;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 1%;
+            }
+            .desc {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
         img {
             display: block;
             width: 100%;
@@ -51,43 +56,11 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        .experience_text_wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        margin-bottom: 3%;
+        img {
+            display: block;
             width: 100%;
-            height: 50vh;
-            background-color: #fdb53d;
-            color: #fff;
-            .experience_one {
-                font-size: 18px;
-                margin-bottom: 2%;
-            }
-            .experience_bold {
-                font-size: 30px;
-                font-weight: 700;
-            }
-            .link {
-                margin-top: 1%;
-                margin-bottom: 1%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid #ccc;
-                width: 200px;
-                height: 46px;
-                font-size: 16px;
-                font-weight: 700;
-                border-radius: 50px;
-                background-color: #fff;
-                color: #222;
-            }
-            .experience_two {
-                margin-top: 1%;
-                font-size: 14px;
-            }
+            
         }
     }
     .interior_section {
@@ -96,6 +69,7 @@
         flex-direction: column;
         width: 100%;
         height: auto;
+        margin-bottom: 6%;
         .title_wrap {
             display: flex;
             flex-direction: column;
@@ -106,33 +80,40 @@
                 font-size: 30px;
                 font-weight: 700;
             }
-            .desc1 {
-                margin-top: 1%;
+            .desc {
+                margin-top: 2%;
                 margin-bottom: 1%;
             }
         }
         .market_img_wrap {
             margin-top: 3%;
-            margin-bottom: 3%;
             display: flex;
-            flex-flow: row wrap;
-            .item {
-                flex: 1 0 25%;
-                margin: 5px;    
-                min-height: 33.33vh;
-                background-color: #222;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            .market_img_items{
+                display: flex;
                 width: 100%;
-                height: 300px;
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+                height: 8%;
+                transition: 0.5s;
+                align-items: center;
+                .item {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 19.5px;
+                    background: #fff;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        display: block;
+                        width: 80%;
+                        object-fit: cover;
+                    }  
+                }        
             }
+                
         }
-        
     }
     
     .smartdevice_section {
@@ -150,35 +131,13 @@
                 font-size: 30px;
                 font-weight: 700;
             }
-            .desc1 {
+            .desc {
                 margin-top: 2%;
                 margin-bottom: 1%;
             }
-            .desc2 {
-                font-size: 20px;
-                font-weight: 700;
-            }
         }
         .smart_img_wrap {
-            margin-top: 3%;
-            margin-bottom: 3%;
-            display: flex;
-            flex-flow: row wrap;
-            .item {
-                flex: 1 0 25%;
-                margin: 5px;    
-                min-height: 33.33vh;
-                background-color: #222;
-                width: 100%;
-                height: 300px;
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+            
         }
     }
     
@@ -187,12 +146,9 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        .drawing_wrap {
-            margin-bottom: 8%;
-            img {
-                display: block;
-                width: 100%;
-            }
+        img {
+            display: block;
+            width: 100%;
         }
     }
 }
