@@ -221,6 +221,7 @@
 }
 
 #content .drawing_section {
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
