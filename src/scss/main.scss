@@ -36,9 +36,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
-    overflow: auto;
+    height: auto;
     background-color: #fef5f0;
+    padding-bottom: 6%;
     .menu_wrap {
         display: flex;
         flex-direction: column;
