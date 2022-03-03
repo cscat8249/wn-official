@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    
+
     //스크롤 이벤트
     window.addEventListener('scroll',function(){
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY; 
