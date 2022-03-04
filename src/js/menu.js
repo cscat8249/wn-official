@@ -10,27 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let special = document.querySelector('#special');
     let dessert = document.querySelector('#dessert');
 
-    dep1_items.forEach(dep1_item => {
-        dep1_item.addEventListener('click', function(){
-            let viewIdx = this.getAttribute('subSeq');
-            menu_items.forEach((thsIdx,index) => {
-                if(index == viewIdx){
-                    thsIdx.style.display = "flex";
-                } else {
-                    thsIdx.style.display = "none";
-                }
-            });
-            dep1_items.forEach((thsIdx) => {
-                if(thsIdx.getAttribute('subSeq') == viewIdx){
-                    thsIdx.classList.add('active');
-                } else {
-                    thsIdx.classList.remove('active');
-                }
-            })
-        });
-    });
-
-    var swiper = new Swiper('.all', {
+    var swiperContainer = new Swiper('.menu_list', {
         slidesPerView: 4,
         spaceBetween: 20,
         loop : true,
@@ -46,108 +26,52 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    all.addEventListener('click', function(){
-        new Swiper('.all', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
+    function menuitemListajax(mod){
+        var mod = {
+            'mod' : mod
+        }
+        swiperContainer.removeAllSlides();
+        $.ajax({
+            url:'https://first2cnt.cafe24.com/menulist.php',
+            type:'post',
+            data: mod,
+            dataType:'json',
+        }).done(function(data){
+            var length = data.id.length; 
+            var htmlArr=[]; 
+            console.log(data);
+            let html = "";
+            for(var i=0; i < length; i++){
+                html += "<div class='swiper-slide item'>";
+                html += "<div class='img_wrap'>";
+                html += "<img src='/wn-official/src/img/menu/"+data.path[i]+"' alt='"+data.menu_name[i]+"'/>";
+                html += "</div>";
+                html += "<div class='text_wrap'>";
+                html += "<p>" + data.menu_name[i] + "</p>";
+                html += "</div>"
+                html += "</div>";
+            }
+            htmlArr.push(html);
+            swiperContainer.appendSlide(htmlArr); 
+            swiperContainer.update();
         });
-    });
+    }
 
-    meat.addEventListener('click', function(){
-        new Swiper('.meat', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
+    menuitemListajax();
 
-    koreafood.addEventListener('click', function(){
-        new Swiper('.koreafood', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
-
-    snackbar.addEventListener('click', function(){
-        new Swiper('.snackbar', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
-
-    globalfood.addEventListener('click', function(){
-        new Swiper('.globalfood', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
-
-    special.addEventListener('click', function(){
-        new Swiper('.special', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
-        });
-    });
-
-    dessert.addEventListener('click', function(){
-        new Swiper('.dessert', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop : true,
-            navigation: {
-                nextEl: '.menu-swiper-left',
-                prevEl: '.menu-swiper-right',
-            },
-            mousewheel: {
-                invert: true,
-            },
+    dep1_items.forEach(dep1_item => {
+        dep1_item.addEventListener('click', function(){
+            let viewIdx = this.getAttribute('subSeq');
+            let mod = this.getAttribute('id');
+            // alert(mod);
+            menuitemListajax(mod);
+            dep1_items.forEach((thsIdx) => {
+                if(thsIdx.getAttribute('subSeq') == viewIdx){
+                    thsIdx.classList.add('active');
+                } else {
+                    thsIdx.classList.remove('active');
+                }
+            })
         });
     });
 });
