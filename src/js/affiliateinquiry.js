@@ -43,28 +43,34 @@ document.addEventListener("DOMContentLoaded", function () {
     
     form_submit.addEventListener('click',function(e){
         e.preventDefault();
+        LoadingWithMask();
         if(fullname.value.length === 0) {
             alert('이름을 입력하세요.');
+            closeLoadingWithMask();
             fullname.focus();
             return false;
         }
         if(telnumber1.value.length === 0 || telnumber2.value.length === 0 || telnumber3.value.length === 0){
             alert('휴대폰 번호를 입력하세요.');
+            closeLoadingWithMask();
             telnumber1.focus();
             return false;
         }
         if(hopearea.value.length === 0) {
             alert('희망개설지역을 입력하세요.');
+            closeLoadingWithMask();
             hopearea.focus();
             return false;
         }
         if(estimate.value.length === 0) {
             alert('창업예상견적을 입력하세요.');
+            closeLoadingWithMask();
             estimate.focus();
             return false;
         }
         if(!agreement.checked) {
             alert('개인정보수집관련 동의 해주세요.');
+            closeLoadingWithMask();
             return false;
         }
         var templateParams = {
@@ -78,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         emailjs.init("user_xeNiLGf0KtGdgplHVTXMr");
         emailjs.send('service_tfbhvt1', 'template_1ypktmh', templateParams)
-         //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
         .then(function(response) {
             alert("성공적으로 가맹문의를 신청 하였습니다.");
             fullname.value = null;
@@ -94,40 +99,5 @@ document.addEventListener("DOMContentLoaded", function () {
             closeLoadingWithMask();
         });
     });
-    
-    function LoadingWithMask() {
-        //화면의 높이와 너비를 구합니다.
-        var maskHeight = $(document).height();
-        var maskWidth  = window.document.body.clientWidth;
-         
-        //화면에 출력할 마스크를 설정해줍니다.
-        var mask       ="<div id='mask' style='position:absolute; z-index:9000; background-color:#000000; display:none; left:0; top:0;'></div>";
-        var loadingImg ='';
-          
-        loadingImg +="<img src='/wn-official/src/img/bg/Spinner.gif' style='position: absolute; top: 50%; left: 45%; display: block; margin: 0px auto;'/>";
-         
-        //화면에 레이어 추가
-        $('body')
-            .append(mask);
-     
-        //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채웁니다.
-        $('#mask').css({
-                'width' : maskWidth,
-                'height': maskHeight,
-                'opacity' :'0.3'
-        });
-      
-        //마스크 표시
-        $('#mask').show();
-      
-        //로딩중 이미지 표시
-        $('#loadingImg').append(loadingImg);
-        $('#loadingImg').show();
 
-    }
-    
-    function closeLoadingWithMask() {
-        $('#mask, #loadingImg').hide();
-        $('#mask, #loadingImg').empty(); 
-    }
 });

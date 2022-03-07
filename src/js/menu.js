@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }).done(function(data){
             var length = data.id.length; 
             var htmlArr=[]; 
-            console.log(data);
             let html = "";
             for(var i=0; i < length; i++){
                 html += "<div class='swiper-slide item'>";
@@ -52,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 html += "</div>";
             }
             htmlArr.push(html);
+            closeLoadingWithMask();
             swiperContainer.appendSlide(htmlArr); 
             swiperContainer.update();
         });
@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let viewIdx = this.getAttribute('subSeq');
             let mod = this.getAttribute('id');
             // alert(mod);
+            LoadingWithMask();
             menuitemListajax(mod);
             dep1_items.forEach((thsIdx) => {
                 if(thsIdx.getAttribute('subSeq') == viewIdx){
