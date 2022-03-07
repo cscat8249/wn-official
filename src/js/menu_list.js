@@ -1,27 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dep1_items = document.querySelectorAll('.dep1_item');
     
-    var swiperContainer = new Swiper('.menu_list', {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop : true,
-        navigation: {
-            nextEl: '.menu-swiper-left',
-            prevEl: '.menu-swiper-right',
-        },
-        mousewheel: {
-            invert: true,
-        },
-        autoplay: {
-            delay: 3000,
-        },
-    });
-
-    function menuitemListajax(mod){
+    function menuitemListajax(mod) {
         var mod = {
             'mod' : mod
         }
-        swiperContainer.removeAllSlides();
+        // $('#menu_content').append(html);
         $.ajax({
             url:'https://first2cnt.cafe24.com/menulist.php',
             type:'post',
@@ -30,24 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }).done(function(data){
             var length = data.id.length; 
             var htmlArr=[]; 
-            let html = "";
+            var html = '';
             for(var i=0; i < length; i++){
-                html += "<div class='swiper-slide item'>";
-                html += "<div class='img_wrap'>";
-                html += "<img src='/wn-official/src/img/menu/"+data.path[i]+"' alt='"+data.menu_name[i]+"'/>";
-                html += "</div>";
-                html += "<div class='text_wrap'>";
-                html += "<p>" + data.menu_name[i] + "</p>";
-                html += "</div>"
-                html += "</div>";
+                html += '<li class="item">';
+                html += '<div class="item_img_wrap">';
+                html += '<img src="/wn-official/src/img/menu/'+ data.path[i] +'"alt="'+ data.menu_name[i] + '">';
+                html += '</div>';
+                html += '<div class="text_wrap">';
+                html += '<p>' + data.menu_name[i] + '</p>';
+                html += '</div>';
+                html += '</li>';
             }
             htmlArr.push(html);
+            $('#menu_content').html(htmlArr);
             closeLoadingWithMask();
-            swiperContainer.appendSlide(htmlArr); 
-            swiperContainer.update();
         });
     }
-
     menuitemListajax();
 
     dep1_items.forEach(dep1_item => {
@@ -66,4 +48,5 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         });
     });
+
 });
