@@ -472,7 +472,7 @@
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_many_peple_wrap .info {
-  padding-top: 21%;
+  padding-top: 29%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_difficulty_wrap {
@@ -480,11 +480,15 @@
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_difficulty_wrap .info {
-  padding-top: 10%;
+  padding-top: 13%;
+}
+
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_timer_wrap .info {
+  padding-top: 32%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_refrigerator_wrap .info {
-  padding-top: 6%;
+  padding-top: 12%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_info {

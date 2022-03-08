@@ -28,11 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
             htmlArr.push(html);
             $('#menu_content').html(htmlArr);
             let menu_items = document.querySelectorAll('li.item');
+    
             menu_items.forEach(item => {
                 item.addEventListener('click',function(){
+                    let viewIdx = this.getAttribute('data-set');
                     $("#item_reference").stop().fadeIn(300);
+                    menuitemViewajax(viewIdx);
                 });
             });
+
             $(".pop_close").click(function(){
                 $(".item_reference").stop().fadeOut(300);
             });
@@ -57,6 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         });
     });
-
+console.log
     
 });
