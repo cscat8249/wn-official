@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function menuitemListajax(mod){
         var mod = {
+            'page' : '',
             'mod' : mod
         }
         swiperContainer.removeAllSlides();
