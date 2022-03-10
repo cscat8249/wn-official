@@ -37,7 +37,8 @@
           flex-direction: column;
   width: 100%;
   height: auto;
-  margin-bottom: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 #content .stormap_section .title_wrap {
