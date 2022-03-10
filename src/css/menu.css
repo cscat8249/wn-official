@@ -357,18 +357,22 @@
   position: relative;
 }
 
-.item_reference .modal_inner .pop_content .content button {
+.item_reference .modal_inner .pop_content .content .menu_next, .item_reference .modal_inner .pop_content .content .menu_prev {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
   border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.item_reference .modal_inner .pop_content .content button:hover {
+.item_reference .modal_inner .pop_content .content .menu_next:hover, .item_reference .modal_inner .pop_content .content .menu_prev:hover {
   color: #fdb53d;
 }
 
-.item_reference .modal_inner .pop_content .content button i {
+.item_reference .modal_inner .pop_content .content .menu_next i, .item_reference .modal_inner .pop_content .content .menu_prev i {
   font-size: 7vw;
 }
 
@@ -488,7 +492,7 @@
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_refrigerator_wrap .info {
-  padding-top: 12%;
+  padding-top: 20%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_info {
@@ -510,7 +514,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -533,7 +537,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

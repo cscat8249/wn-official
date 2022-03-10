@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dep1_items = document.querySelectorAll('.dep1_item');
-
     function menuitemListajax(mod) {
         var mod = {
             'mod' : mod
