@@ -273,10 +273,6 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-image: url('/wn-official/src/img/bg/bg_left.png'), url('/wn-official/src/img/bg/bg_right.png');
-    background-size:30% 40%, 30% 40%;
-    background-position:100% 12% ,0px 100%;
-    background-repeat:no-repeat;
     overflow: auto;
     .stroy_wrap {
         position: relative;
@@ -384,10 +380,6 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-image: url('/wn-official/src/img/bg/bg_left.png'), url('/wn-official/src/img/bg/bg_right.png');
-    background-size:30% 40%, 30% 40%;
-    background-position:100% 12% ,0px 100%;
-    background-repeat:no-repeat;
     .affiliateinquiry_wrap {
         padding-top: 10%;
         display: flex;
