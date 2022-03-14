@@ -78,10 +78,11 @@
             text-align: center;
             font-size: 14px;
             .title {
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: 700;
             }
             .desc {
+                font-size: 18px;
                 margin-top: 2%;
                 margin-bottom: 1%;
             }
@@ -129,16 +130,123 @@
             text-align: center;
             font-size: 14px;
             .title {
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: 700;
             }
             .desc {
+                font-size: 18px;
                 margin-top: 2%;
                 margin-bottom: 1%;
             }
         }
         .smart_img_wrap {
-            
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            .smart_img_items {
+                position: relative;
+                display: flex;
+                width: 96%;
+                transition: 0.5s;
+                .item {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    .item_view {
+                        // border: 1px solid #222;
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        background: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        // border-radius: 6%;
+                        overflow: hidden;
+                        .img_wrap {
+                            img {
+                                display: block;
+                            }
+                        }
+                        .text_wrap {
+                            margin-top: 8%;
+                            margin-bottom: 6%;
+                            // font-family: 'NEXON Lv1 Gothic OTF';
+                            .title {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                            .desc {
+                                margin-top: 8%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .circleL_icon {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #ccc;
+                color: #222;
+                // background-color: $white-color;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%);
+                // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+                z-index: 99;
+                i {
+                    font-size: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    border-color: #fdbd3a;
+                    i {
+                        color: #fdbd3a;
+                    }
+                }
+            }
+            .circleR_icon {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #ccc;
+                color: #222;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, -50%);
+                // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+                z-index: 99;
+                i {
+                    font-size: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    border-color: #fdbd3a;
+                    i {
+                        color: #fdbd3a;
+                    }
+                }
+            }
+              
         }
     }
     

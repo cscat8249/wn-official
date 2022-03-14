@@ -13,4 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 3000,
         },
     });
+
+    new Swiper('.smart_img_items', {
+        slidesPerView: 3,
+        // spaceBetween: 1,
+        loop : true,
+        navigation: {
+            nextEl: '.travel-swiper-right',
+            prevEl: '.travel-swiper-left',
+        },
+        mousewheel: {
+            invert: true,
+        },
+    });
 });
