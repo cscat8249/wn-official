@@ -261,10 +261,57 @@
     width: 100%;
     height: auto;
     margin-bottom: 4%;
-    img {
-        display: block;
-        width: 100%;
+    .storeinfo_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .storeinfo_text_info_wrap {
+            display: flex;
+            flex-direction: column;
+            .storeinfo_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .storeinfo_button_wrap {
+                margin-top: 6%;
+                margin-bottom: 6%;
+                padding-left: 9%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 46px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    border: 1px solid #ccc;
+                    border-radius: 50px;
+                    line-height: 3;
+                    background-color: #fff;
+                    &:hover {
+                        color: #fff;
+                        background-color: #fdb53d;
+                        transition: 0.5s all ease;
+                    }
+                }
+            }
+
+            .storeinfo_desc {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .img_wrap {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
     }
+    
     
 }
 //스토리
