@@ -140,6 +140,7 @@
             }
         }
         .smart_img_wrap {
+            position: relative;
             margin-top: 3%;
             display: flex;
             flex-direction: column;
@@ -148,10 +149,13 @@
             align-items: center;
             justify-content: center;
             .smart_img_items {
-                position: relative;
                 display: flex;
-                width: 96%;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
                 transition: 0.5s;
+                margin: 0 40px;
+                overflow: hidden;
                 .item {
                     position: relative;
                     display: flex;
@@ -160,9 +164,7 @@
                     align-items: center;
                     text-align: center;
                     .item_view {
-                        // border: 1px solid #222;
-                        margin-left: 7%;
-                        margin-right: 7%;
+                        padding: 3.2% 2.8% 2.8%;
                         background: #fff;
                         display: flex;
                         flex-direction: column;
@@ -178,7 +180,6 @@
                         .text_wrap {
                             margin-top: 8%;
                             margin-bottom: 6%;
-                            // font-family: 'NEXON Lv1 Gothic OTF';
                             .title {
                                 font-size: 20px;
                                 font-weight: 700;
@@ -197,11 +198,10 @@
                 height: 40px;
                 border: 1px solid #ccc;
                 color: #222;
-                // background-color: $white-color;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                left: 0;
+                left: 2%;
                 transform: translate(-50%, -50%);
                 // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
                 z-index: 99;
@@ -228,7 +228,7 @@
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: 2%;
                 transform: translate(50%, -50%);
                 // box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
                 z-index: 99;

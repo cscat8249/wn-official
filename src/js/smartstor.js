@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     new Swiper('.smart_img_items', {
         slidesPerView: 3,
-        // spaceBetween: 1,
+        spaceBetween: 24,
         loop : true,
         navigation: {
             nextEl: '.travel-swiper-right',

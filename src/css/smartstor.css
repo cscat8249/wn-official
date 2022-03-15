@@ -224,6 +224,7 @@
 }
 
 #content .smartdevice_section .smart_img_wrap {
+  position: relative;
   margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,13 +244,20 @@
 }
 
 #content .smartdevice_section .smart_img_wrap .smart_img_items {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 96%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin: 0 40px;
+  overflow: hidden;
 }
 
 #content .smartdevice_section .smart_img_wrap .smart_img_items .item {
@@ -271,8 +279,7 @@
 }
 
 #content .smartdevice_section .smart_img_wrap .smart_img_items .item .item_view {
-  margin-left: 7%;
-  margin-right: 7%;
+  padding: 3.2% 2.8% 2.8%;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,7 +324,7 @@
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 2%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 99;
@@ -349,7 +356,7 @@
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 2%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   z-index: 99;
