@@ -9,7 +9,7 @@ function menuitemViewajax(id, catagory) {
     }
     console.log(mod);
     $.ajax({
-        url:'https://first2cnt.cafe24.com/menu/viewboard2.php',
+        url:'http://wn-official.com/menu/viewboard2.php',
         type:'get',
         data: mod,
         dataType:'json',
