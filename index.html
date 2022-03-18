@@ -26,11 +26,15 @@
     <link rel="stylesheet" href="/wn-official/src/css/header.css">
     <link rel="stylesheet" href="/wn-official/src/css/footer.css">
     <link rel="stylesheet" href="/wn-official/src/css/main.css">
+    <link rel="stylesheet" href="/wn-official/src/css/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/wn-official/src/js/popup.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/loading.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/common.js"></script>
     <script type="text/javascript" src="/wn-official/src/js/menu.js"></script>
@@ -55,6 +59,13 @@
     </dl>
     <!-- //건너뛰기 링크 끝 -->
     <div id="hd_pop">
+        <div id="draggable" class="ui-widget-content ui-draggable" style="position:absolute;z-index:999">
+            <img src="http://cfile29.uf.tistory.com/image/210C374751F868602992E2">
+            <div style="padding:5px;">
+                <input type="checkbox" id="not_open_day" style="vertical-align:middle;"><span>오늘 하루 열지 않기</span>
+                <span id="close_popup" style="margin-top:4px; float:right;cursor:hand">닫기</span>
+            </div>
+        </div>
         
     </div>
     <div id="wrap">
