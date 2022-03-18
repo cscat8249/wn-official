@@ -2,7 +2,6 @@
 
 function menuitemViewajax(id, catagory) {
     catagory = document.querySelector('#catagory').value;
-    console.log(catagory);
     var mod = {
         "catagory": catagory,
         "id" : id
