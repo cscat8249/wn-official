@@ -1,9 +1,13 @@
 #draggable { 
     top: 100px; 
     left : 100px; 
-    width: 251px; 
-    height: 360px; 
+    width: auto; 
+    height: auto; 
     padding: 0.5em;
+    img {
+        width: 100%;
+        display: block;
+    }
     span { 
         font-size:12px; 
     } 
