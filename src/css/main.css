@@ -371,7 +371,7 @@
 
 .menu_section .menu_wrap .menu_items_wrap .menu_btn_more_wrap a:hover {
   color: #fff;
-  background-color: #fdb53d;
+  background-color: #fdbd3a;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -494,7 +494,7 @@
 
 .storeinfo_section .storeinfo_wrap .storeinfo_text_info_wrap .storeinfo_button_wrap a:hover {
   color: #fff;
-  background-color: #fdb53d;
+  background-color: #fdbd3a;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -640,7 +640,7 @@
 
 .stroy_section .stroy_wrap .more_wrap a:hover {
   color: #fff;
-  background-color: #fdb53d;
+  background-color: #fdbd3a;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -905,7 +905,7 @@
 }
 
 .affiliateinquiry_section .affiliateinquiry_wrap .affiliateinquiry_text_wrap .affiliateinquiry_text_two .checkbox_btn_wrap .container input:checked ~ .checkmark {
-  background-color: #fdb53d;
+  background-color: #fdbd3a;
 }
 
 .affiliateinquiry_section .affiliateinquiry_wrap .affiliateinquiry_text_wrap .affiliateinquiry_text_two .checkbox_btn_wrap .checkmark:after {
@@ -940,7 +940,7 @@
 
 .affiliateinquiry_section .affiliateinquiry_wrap .affiliateinquiry_text_wrap .affiliateinquiry_text_two .checkbox_btn_wrap button:hover {
   color: #fff;
-  background-color: #fdb53d;
+  background-color: #fdbd3a;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -967,5 +967,5 @@
 .affiliateinquiry_section .affiliateinquiry_wrap .startup_inquiry_wrap i {
   font-size: 30px;
   line-height: inherit;
-  color: #fdb53d;
+  color: #fdbd3a;
 }

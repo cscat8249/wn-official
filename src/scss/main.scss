@@ -225,7 +225,7 @@
                     background-color: #fff;
                     &:hover {
                         color: #fff;
-                        background-color: #fdb53d;
+                        background-color: #fdbd3a;
                         transition: 0.5s all ease;
                     }
                 }
@@ -292,7 +292,7 @@
                     background-color: #fff;
                     &:hover {
                         color: #fff;
-                        background-color: #fdb53d;
+                        background-color: #fdbd3a;
                         transition: 0.5s all ease;
                     }
                 }
@@ -382,7 +382,7 @@
                 background-color: #fff;
                 &:hover {
                     color: #fff;
-                    background-color: #fdb53d;
+                    background-color: #fdbd3a;
                     transition: 0.5s all ease;
                 }
             }
@@ -557,7 +557,7 @@
                     }
                     /* When the checkbox is checked, add a "red" background */
                     .container input:checked ~ .checkmark {
-                        background-color: #fdb53d;
+                        background-color: #fdbd3a;
                     }
                     /* Create the checkmark/indicator (hidden when not checked) */
                     .checkmark:after {
@@ -588,7 +588,7 @@
                         border-radius: 50px;
                         &:hover {
                             color: #fff;
-                            background-color: #fdb53d;
+                            background-color: #fdbd3a;
                             transition: 0.5s all ease;
                         }
                     }
@@ -609,7 +609,7 @@
             i {
                 font-size: 30px;
                 line-height: inherit;
-                color: #fdb53d
+                color: #fdbd3a
             }
         }
     }
