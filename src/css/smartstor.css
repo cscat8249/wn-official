@@ -88,9 +88,34 @@
   margin-bottom: 3%;
 }
 
-#content .experience_section img {
-  display: block;
+#content .experience_section .experience_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content .experience_section .experience_wrap .experience_img_wrap {
+  margin-right: 4%;
+}
+
+#content .experience_section .experience_wrap .experience_img_wrap img {
   width: 100%;
+  display: block;
+}
+
+#content .experience_section .experience_wrap .experience_sns_img_wrap img {
+  width: 100%;
+  display: block;
 }
 
 #content .interior_section {

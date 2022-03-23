@@ -58,10 +58,24 @@
         width: 100%;
         height: auto;
         margin-bottom: 3%;
-        img {
-            display: block;
-            width: 100%;
-            
+        .experience_wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .experience_img_wrap {
+                margin-right: 4%;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .experience_sns_img_wrap {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
         }
     }
     .interior_section {
