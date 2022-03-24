@@ -33,8 +33,7 @@
                 .dep1_item {
                     margin-left: 30px;
                     margin-right: 30px;
-                    a {
-                        
+                    a { 
                         position: relative;
                         font-size: 20px;
                         font-weight: 400;
@@ -275,10 +274,13 @@
                         .item_cooking_info {
                             display: flex;
                             flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
                             > div {
+                                width: 100%;
                                 display: flex;
                                 flex-direction: column;
-                                // justify-content: center;
+                                justify-content: center;
                                 align-items: center;
                                 margin: 2%;
                                 > img {
@@ -290,24 +292,35 @@
                                 }
                             }
                             .cooking_many_peple_wrap {
+                                img {
+                                    width: 70%;
+                                }
                                 .info {
-                                    padding-top: 29%;
+                                    padding-top: 10%;
                                 }
                             }
                             .cooking_difficulty_wrap {
-                                margin-top: 4%;
+                                img {
+                                    margin: 18% 0;
+                                }
                                 .info {
-                                    padding-top: 13%;
+                                    padding-top: 10%;
                                 }
                             }
                             .cooking_timer_wrap {
+                                img {
+                                    width: 70%;
+                                }
                                 .info {
-                                    padding-top: 32%;
+                                    padding-top: 10%;
                                 }
                             }
                             .cooking_refrigerator_wrap {
+                                img {
+                                    width: 70%;
+                                }
                                 .info {
-                                    padding-top: 20%;
+                                    padding-top: 10%;
                                 }
                             }
                         }

@@ -450,9 +450,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info > div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,6 +467,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -475,24 +485,36 @@
   font-size: 18px;
 }
 
-.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_many_peple_wrap .info {
-  padding-top: 29%;
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_many_peple_wrap img {
+  width: 70%;
 }
 
-.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_difficulty_wrap {
-  margin-top: 4%;
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_many_peple_wrap .info {
+  padding-top: 10%;
+}
+
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_difficulty_wrap img {
+  margin: 18% 0;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_difficulty_wrap .info {
-  padding-top: 13%;
+  padding-top: 10%;
+}
+
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_timer_wrap img {
+  width: 70%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_timer_wrap .info {
-  padding-top: 32%;
+  padding-top: 10%;
+}
+
+.item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_refrigerator_wrap img {
+  width: 70%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_cooking_info .cooking_refrigerator_wrap .info {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .item_reference .modal_inner .pop_content .content .item_info_content .item_info_wrap .item_info {
