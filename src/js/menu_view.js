@@ -8,7 +8,7 @@ function menuitemViewajax(id, catagory) {
     }
     console.log(mod);
     $.ajax({
-        url:'http://wn-official.com/menu/viewboard2.php',
+        url:'https://wn-official.com/menu/viewboard2.php',
         type:'get',
         data: mod,
         dataType:'json',

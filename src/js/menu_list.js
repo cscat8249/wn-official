@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         // $('#menu_content').append(html);
         $.ajax({
-            url:'http://wn-official.com/menulist.php',
+            url:'https://wn-official.com/menulist.php',
             type:'post',
             data: mod,
             dataType:'json',
