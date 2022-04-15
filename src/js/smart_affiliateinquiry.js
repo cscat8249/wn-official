@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let telnumber2 = document.querySelector('#telnumber2');
     let telnumber3 = document.querySelector('#telnumber3');
     let hopearea = document.querySelector('#hopearea');
-
+    let smartdevices = document.querySelectorAll('input[name="smartdevice"]');
+    let hopeprograms = document.querySelectorAll('input[name="hopeprogram"]');
     let agreement = document.querySelector('#agreement');
     let form_submit = document.querySelector('#form_submit');
 
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        if(!input[name="smartdevice"].checked && !input[name="hopeprogram"].checked) {
+        if(!smartdevices.checked && !hopeprograms.checked) {
             alert('문의하시 분류를 선택해주세요');
             closeLoadingWithMask();
             return false;
