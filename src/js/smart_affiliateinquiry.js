@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        if(!smartdevices.checked && !hopeprograms.checked) {
-            alert('문의하시 분류를 선택해주세요');
+        if($('input[name="smartdevice"]:checked').length === 0 && $('input[name="hopeprogram"]:checked').length === 0) {
+            alert('문의하실 분류를 선택해주세요');
             closeLoadingWithMask();
             return false;
         }
@@ -61,18 +61,47 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        let smartdevicesresult = '';
+        let smartdeviceresult  = '';
         let hopeprogramsresult = '';
 
-        smartdevices.forEach((el) => {
-            smartdevicesresult += el.value = ',';
+        smartdevices.forEach((sm) => {
+            if(sm.checked) {
+                smartdeviceresult += sm.value + ' , ';
+            }
         });
 
-        hopeprograms.forEach((el) => {
-            hopeprogramsresult += el.value = ',';
+        hopeprograms.forEach((ho) => {
+            if(ho.checked) {
+                hopeprogramsresult += ho.value +' , ';
+            }
+        });
+
+        var templateParams = {
+            storname: storname.value,
+            telnumber1 : telnumber1.value,
+            telnumber2 : telnumber2.value,
+            telnumber3 : telnumber3.value,
+            hopearea : hopearea.value,
+            smartdeviceresult : smartdeviceresult,
+            hopeprogramsresult : hopeprogramsresult,
+        };
+        emailjs.init("user_xeNiLGf0KtGdgplHVTXMr");
+        emailjs.send('service_tfbhvt1', 'template_oe4g316', templateParams)
+        .then(function(response) {
+            alert("성공적으로 스마트기기 문의신청 하였습니다.");
+            storname.value = null;
+            telnumber1.value = null;
+            telnumber2.value = null;
+            telnumber3.value = null;
+            hopearea.value = null;
+            smartdeviceresult = '';
+            hopeprogramsresult = '';
+            $('input[name="smartdevice"]').prop("checked", false);
+            $('input[name="hopeprogram"]').prop("checked", false);
+            closeLoadingWithMask();
+        }, function(error) {
+            alert("스마트기기문의 신청이 안되었습니다. 한번더 다시 부탁드립니다.");
+            closeLoadingWithMask();
         });
     });
-
-
-
 });
