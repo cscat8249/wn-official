@@ -60,6 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
             closeLoadingWithMask();
             return false;
         }
+
+        let smartdevicesresult = '';
+        let hopeprogramsresult = '';
+
+        smartdevices.forEach((el) => {
+            smartdevicesresult += el.value = ',';
+        });
+
+        hopeprograms.forEach((el) => {
+            hopeprogramsresult += el.value = ',';
+        });
     });
 
 
