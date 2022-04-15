@@ -60,6 +60,26 @@ header .header_wrap .menu_nav .dep1_ul li a {
   position: relative;
   font-size: 16px;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_wrap .menu_nav .dep1_ul li a img {
+  display: block;
+  width: 20px;
+  height: auto;
+  margin-right: 6px;
 }
 
 header .header_wrap .menu_nav .dep1_ul li a span {

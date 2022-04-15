@@ -492,6 +492,12 @@
   background-color: #fff;
 }
 
+.storeinfo_section .storeinfo_wrap .storeinfo_text_info_wrap .storeinfo_button_wrap a img {
+  margin-right: 4px;
+  display: block;
+  width: 20px;
+}
+
 .storeinfo_section .storeinfo_wrap .storeinfo_text_info_wrap .storeinfo_button_wrap a:hover {
   color: #fff;
   background-color: #fdbd3a;
@@ -741,7 +747,7 @@
 }
 
 .affiliateinquiry_section .affiliateinquiry_wrap .affiliateinquiry_text_wrap {
-  width: 100%;
+  width: auto;
   height: 420px;
   background-color: #fef5f0;
   margin-top: 6%;
