@@ -698,6 +698,7 @@
 .affiliateinquiry_section {
   position: relative;
   margin-top: 6%;
+  margin-bottom: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
